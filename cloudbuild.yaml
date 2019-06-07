@@ -27,7 +27,7 @@ steps:
   args:
   - 'build'
   - '-t'
-  - 'gcr.io/$PROJECT_ID/event-to-serving:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/new-helloworld:$SHORT_SHA'
   - '.'
 
 # This step pushes the image to Container Registry
@@ -37,5 +37,5 @@ steps:
   id: Push
   args:
   - 'push'
-  - 'gcr.io/$PROJECT_ID/event-to-serving:$SHORT_SHA'
+  - 'gcr.io/$PROJECT_ID/new-helloworld:$SHORT_SHA'
 # [END cloudbuild]
