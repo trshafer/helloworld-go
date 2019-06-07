@@ -18,7 +18,7 @@ steps:
   args: ['install', '.']
   env: ['PROJECT_ROOT=hello']
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build', 'cmd/update-service/']
+  args: ['build', '.']
   env: ['PROJECT_ROOT=hello']
 
 # This step builds the container image.
